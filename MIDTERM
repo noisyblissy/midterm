@@ -21,7 +21,18 @@ Fishing
  <td width="10%">
  <input type="text" name="txtRod" size="5"
   value="7.99"></td>
-  <td width= "43%">select size= "1" name="qRod">
+  <td width= "43%"><select size= "1" name="qRod">
+  <option selected value="0">
+   Select Quantity</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  </select></td></tr><tr>
+   <td width="48%">1 Taga Box</td>
+ <td width="10%">
+ <input type="text" name="txtRod" size="5"
+  value="1.75"></td>
+  <td width= "43%"><select size= "1" name="qRod">
   <option selected value="0">
    Select Quantity</option>
   <option value="1">1</option>
@@ -57,8 +68,8 @@ Fishing
         prRod=document.form.prRod.value;
         prBox==document.form.prBox.value;
         
-        strRod=parseInt(strRod)*prRod;
-        strBox=parseInt(strBox)*prBox;
+        strRod=parseInt(strRod)* prRod;
+        strBox=parseInt(strBox)* prBox;
         strTotal=(strRod+strBox);
         documents.form.txtTotal.value=strTotal;
         }
